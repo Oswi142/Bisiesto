@@ -10,4 +10,7 @@ describe("Es bisiesto", () => {
   it("deberia retornar que no es bisiesto", () => {
     expect(esBisiesto(2100)).toEqual("No es bisiesto");
   });
+  it("deberia retornar que no es bisiesto", () => {
+    expect(esBisiesto(2008)).toEqual("Es bisiesto");
+  });
 });
