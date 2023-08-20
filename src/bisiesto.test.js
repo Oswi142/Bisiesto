@@ -1,7 +1,10 @@
 import esBisiesto from "./bisiesto";
 
 describe("Es bisiesto", () => {
-  it("deberia retornar el año", () => {
-    expect(esBisiesto(1900)).toEqual(1900);
+  it("deberia retornar que no es bisiesto", () => {
+    expect(esBisiesto(2001)).toEqual("No es bisiesto");
+  });
+  it("deberia retornar que es bisiesto", () => {
+    expect(esBisiesto(2000)).toEqual("Es bisiesto");
   });
 });
